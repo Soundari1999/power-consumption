@@ -1,1 +1,1 @@
-# power-consumption
+# household electric power consumption
