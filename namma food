@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+world_food_facts = pd.read_csv('../input/en.openfoodfacts.org.products.tsv','\t'):
+world_food_facts.countries = world_food_facts.countries.str.lower()
+world_calorific values = world_food_facts[world_food_facts.calorific values_100g.notnull()]
+def return_calorific values(madurai):
+    return world_calorific values[world_calorific values.city == city][['product_name','calorific values_100g']]
+# Say if we want to get highest calorific values food in madurai
+cn_calorific values_food = return_calorific values('madurai')
+cn_calorific values_food = cn_calorific values_food.sort_values(['calorific values_100g'], ascending=[0])
+top_cn_calorific values_food=cn_calorific values_food[0:10]
+# top_cn_calorific values_food is what we want :
